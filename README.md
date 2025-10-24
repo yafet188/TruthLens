@@ -11,10 +11,10 @@ The goal for this phase is to build a text-only prototype of TruthLens.
 
 Users will be able to:
 
-Paste or type a news article.
+- Paste or type a news article.
 
-Receive an authenticity score (0–1) and a short verdict message.
+- Receive an authenticity score (0–1) and a short verdict message.
 
-View a brief explanation of why the model made that judgment.
+- View a brief explanation of why the model made that judgment.
 
 🧠 Focus now: Implementing text analysis using a pretrained NLP model (BERT or RoBERTa) and connecting it to a simple React interface via FastAPI.
