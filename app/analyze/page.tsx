@@ -1,7 +1,15 @@
-export default function Page({}: {}) {
+import Header from "../components/Header";
+
+export default function page() {
   return <div>
-    <h1>Header</h1>
-    <h1>Analyze Section</h1>
-    <h1>Steps/Dashboard Section</h1>
+    <div className="w-full mb-4 border-4 pb-4">
+      <Header />
+    </div>
+    <div className="w-full mb-4 border-4 pb-4">
+      <h1>Analyze Section</h1>
+    </div>
+    <div className="w-full mb-4 border-4 pb-4">
+      <h1>Steps/Dashboard Section</h1>
+    </div>
   </div>
 }
