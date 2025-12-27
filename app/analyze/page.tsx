@@ -1,15 +1,9 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function page() {
-  return <div>
-    <div className="w-full mb-5 border-4 pb-4">
+  return <div className="bg-[#000F14] min-h-screen">
       <Header />
-    </div>
-    <div className="w-full mb-5 border-4 pb-4">
-      <h1>Analyze Section</h1>
-    </div>
-    <div className="w-full mb-5 border-4 pb-4">
-      <h1>Steps/Dashboard Section</h1>
-    </div>
+      <Footer />
   </div>
 }

@@ -22,5 +22,29 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Prefer SF Pro on macOS if available; fall back to system fonts otherwise */
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+/*
+Option: Self-host SF Pro (only if you have a license to host the files):
+1. Place .woff2/.woff files in /public/fonts, e.g. /public/fonts/SFProText-Regular.woff2
+2. Uncomment and update the src paths below.
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/SFProText-Regular.woff2') format('woff2'),
+       url('/fonts/SFProText-Regular.woff') format('woff');
+}
+
+Then you can keep `font-family: "SF Pro Text", -apple-system, system-ui, ...` as above.
+*/
+
+/* Utility class: apply SF Pro (or the system fallback) to a specific element */
+.sf-pro {
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
