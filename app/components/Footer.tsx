@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className="flex flex-row gap-[50px]">
             <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
-                <p className="text-[18px] font-semibold text-[#FFFFFF] sf-pro">Product</p>
+                <p className="text-[18px] font-bold text-[#00B0F2] sf-pro">Quick Links</p> 
             </div>
 
         </div>
