@@ -24,10 +24,17 @@ export default function Footer() {
 
         <div className="flex flex-row gap-[50px]">
             <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
-                <p className="text-[18px] font-bold text-[#00B0F2] sf-pro">Quick Links</p> 
+                <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Quick Links</p>
+                <div className="flex flex-col justify-between gap-[10px]">
+                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Home</p>
+                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">How It Works</p>
+                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Analyze</p>
+                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Dashboard</p>
+                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Feedback</p>
+                </div>
             </div>
-
         </div>
+
       </div>
     </footer>
   );
