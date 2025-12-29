@@ -82,18 +82,20 @@ export default function Footer() {
                         <Image
                             src="/images/Y.png"
                             alt="Y Logo"
-                            width={24}
-                            height={24}
+                            width={16}
+                            height={16}
                         />
 
                         <Image
                             src="/images/T.png"
                             alt="T Logo"
-                            width={24}
-                            height={24}
+                            width={16}
+                            height={16}
                         />
                     </div>
                 </div>
+
+
             </div>
         </footer>
     );
