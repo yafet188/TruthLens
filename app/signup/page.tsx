@@ -7,7 +7,7 @@ export default function SignIn() {
     return <div className="w-full flex flex-row bg-gradient-to-r from-[#000000] to-[#01131A] py-[150px]  min-h-screen">
 
         {/* Left Side - Sign In Form */}
-        <div className="flex flex-col gap-[50px] w-full p-[10px]">
+        <div className="flex flex-col gap-[10px] w-full p-[10px]">
             <p className="sf-pro font-normal text-center text-[75px]">Sign Up</p>
 
             {/* Sign Up Options */}
