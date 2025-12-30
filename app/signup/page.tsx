@@ -10,41 +10,49 @@ export default function SignIn() {
         <div className="flex flex-col gap-[50px] w-full p-[10px]">
             <p className="sf-pro font-normal text-center text-[75px]">Sign Up</p>
 
-            {/* Sign In Options */}
-            <div className="flex flex-col items-center justify-center gap-[25px]">
+            {/* Sign Up Options */}
+            <div className="flex flex-col items-center justify-center gap-[15px]">
 
-                {/* Google Sign In Button */}
-                <button className="flex flex-row rounded-[15px] py-[10px] px-[100px] gap-[10px] bg-white">
-                    <img
-                        src="images/Google.png"
-                        alt="Google Icon"
-                        className="mr-[10px] w-[33px] h-[33px] object-contain drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]" />
-                    <p className="sf-pro font-normal text-[25px] text-black drop-shadow-[2px_4px_4px_rgba(0,0,0,0.50)]">Sign in with Google</p>
-                </button>
+                {/* Info */}
+                <div className="flex flex-col gap-[25px] w-full max-w-[500px] px-[20px] py-[30px] ">
+                    <input
+                        type="text"
+                        placeholder="Email:"
+                        className="sf-pro font-normal text-[20px] px-[15px] py-[10px] rounded-[10px] border-[2px] border-white bg-[#0E191C] text-white focus:outline-none focus:border-[#6EC9F5]"
+                        
+                    />
 
-                {/* Apple Sign In Button */}
-                <button className="flex flex-row rounded-[15px] py-[10px] px-[100px] gap-[10px] bg-[#0E191C] border-[2px] border-white ">
-                    <img
-                        src="images/Apple.png"
-                        alt="Apple Icon"
-                        className="mr-[10px] w-[33px] h-[33px] object-contain drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]" />
-                    <p className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">Sign in with Apple</p>
-                </button>
+                    <input
+                        type="password"
+                        placeholder="Password:"
+                        className="sf-pro font-normal text-[20px] px-[15px] py-[10px] rounded-[10px] border-[2px] border-white bg-[#0E191C] text-white focus:outline-none focus:border-[#6EC9F5]"
+                    />
 
-                {/* Email Sign In Button */}
-                <button className="flex flex-row rounded-[15px] py-[10px] px-[100px] gap-[10px] bg-[#0E191C] border-[2px] border-white ">
-                    <img
-                        src="images/Email.png"
-                        alt="Email Icon"
-                        className="mr-[10px] w-[33px] h-[40px] object-contain drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]" />
-                    <p className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">Sign in with Email</p>
-                </button>
+                    {/* Confirm Password */}
+                    <input
+                        type="password"
+                        placeholder="Confirm Password:"
+                        className="sf-pro font-normal text-[20px] px-[15px] py-[10px] rounded-[10px] border-[2px] border-white bg-[#0E191C] text-white focus:outline-none focus:border-[#6EC9F5]"
+                    />
+                </div>
             </div>
 
-            {/* Sign Up Link */}
-            <div className="flex flex-row gap-[10px] justify-center">
-                <p className="sf-pro font-normal text-[25px] text-[#A3A0A0]drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">Don't have an account?</p>
-                <button className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)] underline">Sign Up</button>
+            {/* Options */}
+            <div className="flex flex-col items-center justify-center gap-[25px]">
+                {/* Create Account Button */}
+                <button className="sf-pro font-normal text-[25px] bg-white text-black px-[50px] py-[15px] rounded-[25px] hover:bg-[#00B0F2] transition-colors">
+                    Create Account
+                </button>
+
+                {/* Go Back Button */}
+                <button className="sf-pro font-normal text-[25px] bg-[#0E191C] text-white px-[50px] py-[15px] rounded-[25px] hover:bg-[#00B0F2] hover:text-black transition-colors">
+                    Go Back
+                </button>
+
+                {/* Already have an account */}
+                <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
+                    Already have an account? <span className="underline">Sign In</span>
+                </p>
             </div>
         </div>
 
