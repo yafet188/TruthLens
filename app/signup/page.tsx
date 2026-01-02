@@ -50,7 +50,7 @@ export default function SignIn() {
                 </button>
 
                 {/* Already have an account */}
-                <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
+                <p className="sf-pro font-normal text-[15px] text-gray drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
                     Already have an account? <span className="underline">Sign In</span>
                 </p>
             </div>
