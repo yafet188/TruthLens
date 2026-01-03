@@ -1,6 +1,6 @@
-PRIVACY POLICY
+# PRIVACY POLICY
 
-TruthLens – AI-Powered Media & Information Authenticity Platform
+**TruthLens** – AI-Powered Media & Information Authenticity Platform
 
 Last Updated: Wedesday, December 17, 2025
 
