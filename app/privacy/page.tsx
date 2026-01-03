@@ -1,27 +1,33 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import fs from "fs";
-import path from "path";
 import ReactMarkdown from "react-markdown";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
-export default function Page() {
+// Ensure this route runs on the Node.js runtime (required for reading from the filesystem)
+export const runtime = "nodejs";
 
-  const filePath = path.join(process.cwd(), "app/privacy/privacy.md");
-  const content = fs.readFileSync(filePath, "utf8");
+export default async function Page() {
+  let content = "";
+
+  try {
+    const filePath = join(process.cwd(), "app", "privacy", "privacy.md");
+    content = await readFile(filePath, "utf8");
+  } catch (err) {
+    // Fallback so the page still renders if the file path is wrong or the file is missing
+    content =
+      "# Privacy Policy\n\n*(privacy.md not found — check that it exists at `app/privacy/privacy.md`)*";
+  }
 
   return (
     <div className="bg-[#000F14] min-h-screen">
       <Header />
 
-      {/* Privacy Policy Header */}
-      <div className="flex flex-col items-center justify-center py-[50px]">
-        <h1 className="sf-pro font-[500] text-[75px] text-white">Privacy Policy</h1>
-        
-        {/* Privacy Policy Content */}
-        <div className="max-w-4xl px-[20px] py-[30px]">
+      <main className="mx-auto max-w-4xl px-6 py-12 text-white">
+        <div className="prose prose-invert max-w-none">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>
