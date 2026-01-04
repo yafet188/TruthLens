@@ -42,7 +42,6 @@ We may automatically collect limited technical information necessary for service
 - Operating system
 - IP address (temporarily, for security and abuse prevention)
 - Timestamps and session metadata
-- 
 
 This information is collected in an aggregated or transient manner and is not used to identify individual users.
 
