@@ -24,7 +24,7 @@ export default async function Page() {
       <Header />
 
       <main className="mx-auto max-w-4xl px-6 py-12 text-white">
-        <div className="prose prose-invert max-w-none">
+        <div className="prose prose-invert max-w-none prose-headings:mt-6 prose-headings:mb-2 prose-p:my-3 prose-ul:list-disc prose-ol:list-decimal prose-ul:pl-6 prose-ol:pl-6 prose-li:my-1">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
       </main>
