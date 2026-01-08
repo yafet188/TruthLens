@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -9,21 +10,27 @@ export default function Footer() {
                 <div className="w-full flex flex-row justify-between items-start">
 
                     {/* Logo Section */}
-                    <div className="flex flex-row">
-                        <Image
-                            src="/images/Logo+Text.png"
-                            alt="Logo"
-                            width={100}
-                            height={100}
-                            className="border-l-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
-                        />
-                        <Image
-                            src="/images/SeeThroughTheNoise.png"
-                            alt="Logo"
-                            width={445}
-                            height={100}
-                            className="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
-                        />
+                    <div>
+                        <Link
+                            href="/analyze"
+                            aria-label="Go to Analyze"
+                            className="flex flex-row items-center"
+                        >
+                            <Image
+                                src="/images/Logo+Text.png"
+                                alt="TruthLens logo"
+                                width={100}
+                                height={100}
+                                className="border-l-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
+                            />
+                            <Image
+                                src="/images/SeeThroughTheNoise.png"
+                                alt="See Through the Noise"
+                                width={445}
+                                height={100}
+                                className="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
+                            />
+                        </Link>
                     </div>
 
                     {/* Links Section */}
@@ -108,7 +115,6 @@ export default function Footer() {
 
                     {/* Info */}
                     <div className="w-full flex flex-row justify-between items-center pt-[3px] pb-[3px]">
-
                         {/* Name */}
                         <div className="flex flex-row gap-[10px]">
                             <p className="text-[16px] font-normal text-[#004159] sf-pro ">Designed and Developed by Yafet Tegbaru</p>
