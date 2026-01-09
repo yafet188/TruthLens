@@ -51,8 +51,14 @@ export default function Footer() {
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Policies</p>
                             <div className="flex flex-col justify-between gap-[10px]">
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Terms</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Privacy Policy</p>
+                                <Link href="/terms"
+                                    aria-label="Go to Terms and Conditions">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Terms</p>
+                                </Link>
+                                <Link href="/privacy"
+                                    aria-label="Go to Privacy Policy">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Privacy Policy</p>
+                                </Link>
                             </div>
                         </div>
 
