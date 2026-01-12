@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function SignIn() {
 
-    return <div className="w-full flex flex-row bg-gradient-to-r from-[#000000] to-[#01131A] py-[150px]  min-h-screen">
+    return <div className="w-full flex flex-row bg-gradient-to-r from-[#000000] to-[#01131A] py-[100px]  min-h-screen">
 
         {/* Left Side - Sign In Form */}
         <div className="flex flex-col gap-[50px] w-full p-[10px]">
@@ -45,7 +45,7 @@ export default function SignIn() {
             {/* Sign Up Link */}
             <div className="flex flex-row gap-[10px] justify-center">
                 <p className="sf-pro font-normal text-[25px] text-[#A3A0A0]drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">Don't have an account?</p>
-                <button className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)] underline">Sign Up</button>
+                <Link href="/signup" className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)] underline">Sign Up</Link>
             </div>
         </div>
 
