@@ -16,11 +16,13 @@ export default function Header() {
                     />
                 </Link>
                 <div className='flex flex-row gap-[10px]'>
-                    <div className="group w-[100px] h-[50px] flex flex-row justify-center items-center rounded-[25px] border-[1px] border-solid border-[#00B0F2] gap-[15px] hover:bg-[#00B0F2] cursor-pointer transition-all duration-200">
-                        <p className="text-[24px] font-normal text-[#00B3F4] sf-pro group-hover:text-[#005F99] transition-colors duration-200">
-                            Login
-                        </p>
-                    </div>
+                    <Link href="/signin" aria-label="Go to sign in page">
+                        <div className="group w-[100px] h-[50px] flex flex-row justify-center items-center rounded-[25px] border-[1px] border-solid border-[#00B0F2] gap-[15px] hover:bg-[#00B0F2] cursor-pointer transition-all duration-200">
+                            <p className="text-[24px] font-normal text-[#00B3F4] sf-pro group-hover:text-[#005F99] transition-colors duration-200">
+                                Login
+                            </p>
+                        </div>
+                    </Link>
                     <div className='w-[50px] h-[50px] flex flex-col items-center justify-between rounded-[10px] px-[20px] py-[12px]  border-[1px] border-solid border-[#00B0F2] shadow-[0px_4px_10px_rgba(0,_0,_0,_0.25)] relative'>
                         <div className='w-[30px] border-solid border-[1.5px] border-[#00B3F4] shadow-[0px_4px_10px_rgba(0,_0,_0,_0.50)]' />
                         <div className='w-[30px] border-solid border-[1.5px] border-[#00B3F4] shadow-[0px_4px_10px_rgba(0,_0,_0,_0.50)]' />
