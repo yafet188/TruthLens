@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SignIn() {
 
@@ -76,7 +77,7 @@ export default function SignIn() {
 
             {/* Terms and Conditions */}
             <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
-                By continuing, you agree to our <span className="underline">Terms of Service</span> and <span className="underline">Privacy Policy</span>.
+                By continuing, you agree to our <Link href="/terms" className="underline">Terms of Service</Link> and <Link href="/privacy" className="underline">Privacy Policy</Link>.
             </p>
 
         </div>
