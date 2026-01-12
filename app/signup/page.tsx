@@ -1,5 +1,5 @@
 import Image from "next/image";
-import link from "next/link";
+import Link from "next/link";
 
 export default function SignUp() {
 
@@ -44,13 +44,19 @@ export default function SignUp() {
                 </button>
 
                 {/* Go Back Button */}
-                <button className="sf-pro font-normal text-[25px] bg-[#0E191C] text-white px-[50px] py-[15px] rounded-[25px] hover:bg-[#00B0F2] hover:text-black transition-colors">
+                <Link
+                    href="/signin"
+                    className="sf-pro font-normal text-[25px] bg-[#0E191C] text-white px-[50px] py-[15px] rounded-[25px] hover:bg-[#00B0F2] hover:text-black transition-colors"
+                >
                     Go Back
-                </button>
+                </Link>
 
                 {/* Already have an account */}
                 <p className="sf-pro font-normal text-[15px] text-gray drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
-                    Already have an account? <span className="underline">Sign In</span>
+                    Already have an account?{" "}
+                    <Link href="/signin" className="underline hover:text-[#6EC9F5] transition-colors">
+                        Sign In
+                    </Link>
                 </p>
             </div>
         </div>
@@ -64,7 +70,7 @@ export default function SignUp() {
             </h1>
 
             {/* Logo Section */}
-            <link href="/analyze" className="flex flex-row">
+            <Link href="/analyze" className="flex flex-row">
                 <Image
                     src="/images/Logo+Text.png"
                     alt="Logo"
@@ -79,11 +85,18 @@ export default function SignUp() {
                     height={100}
                     className="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
                 />
-            </link>
+            </Link>
 
             {/* Terms and Conditions */}
             <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
-                By continuing, you agree to our <span className="underline">Terms of Service</span> and <span className="underline">Privacy Policy</span>.
+                By continuing, you agree to our{" "}
+                <Link href="/terms" className="underline hover:text-[#6EC9F5] transition-colors">
+                    Terms of Service
+                </Link>
+                {" "}and{" "}
+                <Link href="/privacy" className="underline hover:text-[#6EC9F5] transition-colors">
+                    Privacy Policy
+                </Link>.
             </p>
 
         </div>
