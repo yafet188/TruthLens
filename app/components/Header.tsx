@@ -16,7 +16,7 @@ export default function Header() {
                     />
                 </Link>
                 <div className='flex flex-row gap-[10px]'>
-                    <div className="w-[100px] h-[50px] flex flex-row justify-center items-center rounded-[25px] border-[1px] border-solid border-[#00B0F2] gap-[15px]">
+                    <div className="group w-[100px] h-[50px] flex flex-row justify-center items-center rounded-[25px] border-[1px] border-solid border-[#00B0F2] gap-[15px] hover:bg-[#00B0F2] cursor-pointer transition-all duration-200">
                         <p className="text-[24px] font-normal text-[#00B3F4] sf-pro group-hover:text-[#005F99] transition-colors duration-200">
                             Login
                         </p>
