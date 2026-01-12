@@ -1,10 +1,9 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Image from "next/image";
+import link from "next/link";
 
-export default function SignIn() {
+export default function SignUp() {
 
-    return <div className="w-full flex flex-row bg-gradient-to-r from-[#000000] to-[#01131A] py-[150px]  min-h-screen">
+    return <div className="w-full flex flex-row bg-gradient-to-r from-[#000000] to-[#01131A] py-[50px]  min-h-screen">
 
         {/* Left Side - Sign In Form */}
         <div className="flex flex-col gap-[10px] w-full p-[10px]">
@@ -65,7 +64,7 @@ export default function SignIn() {
             </h1>
 
             {/* Logo Section */}
-            <div className="flex flex-row">
+            <link href="/analyze" className="flex flex-row">
                 <Image
                     src="/images/Logo+Text.png"
                     alt="Logo"
@@ -80,7 +79,7 @@ export default function SignIn() {
                     height={100}
                     className="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
                 />
-            </div>
+            </link>
 
             {/* Terms and Conditions */}
             <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
