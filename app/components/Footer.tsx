@@ -75,41 +75,55 @@ export default function Footer() {
 
                     {/* Social Media Icons */}
                     <div className="flex flex-row items-center pt-[8px] pb-[5px] gap-[20px]">
-                        <Image
-                            src="/images/github.png"
-                            alt="GitHub"
-                            width={24}
-                            height={24}
-                        />
-                        <Image
-                            src="/images/linkedin.png"
-                            alt="LinkedIn"
-                            width={24}
-                            height={24}
-                        />
-                        <Image
-                            src="/images/instagram.png"
-                            alt="Instagram"
-                            width={24}
-                            height={24}
-                        />
-
-                        <div className="flex flex-row pt-[5px] pb-[5px] gap-[5px]">
-
+                        <Link href="https://github.com/yafet188" aria-label="GitHub Link">
                             <Image
-                                src="/images/Y.png"
-                                alt="Y Logo"
-                                width={16}
-                                height={16}
+                                src="/images/github.png"
+                                alt="GitHub"
+                                width={24}
+                                height={24}
+                                className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
                             />
-
+                        </Link>
+                        <Link href="https://linkedin.com/in/yafet-tegbaru" aria-label="LinkedIn Link">
                             <Image
-                                src="/images/T.png"
-                                alt="T Logo"
-                                width={16}
-                                height={16}
+                                src="/images/linkedin.png"
+                                alt="LinkedIn"
+                                width={24}
+                                height={24}
+                                className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
                             />
-                        </div>
+                        </Link>
+                        <Link href="https://instagram.com/yafetegbaru" aria-label="Instagram Link">
+                            <Image
+                                src="/images/instagram.png"
+                                alt="Instagram"
+                                width={24}
+                                height={24}
+                                className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
+                            />
+                        </Link>
+
+
+                        <Link href="https://yafetegbaru.com" aria-label="Portfolio Link">
+                            <div className="flex flex-row pt-[5px] pb-[5px] gap-[5px]">
+
+                                <Image
+                                    src="/images/Y.png"
+                                    alt="Y Logo"
+                                    width={16}
+                                    height={16}
+                                    className="hover:opacity-70 transition-opacity duration-200"
+                                />
+
+                                <Image
+                                    src="/images/T.png"
+                                    alt="T Logo"
+                                    width={16}
+                                    height={16}
+                                    className="hover:opacity-70 transition-opacity duration-200"
+                                />
+                            </div>
+                        </Link>
                     </div>
 
                 </div>
