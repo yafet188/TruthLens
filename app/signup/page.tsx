@@ -52,7 +52,7 @@ export default function SignUp() {
                 </Link>
 
                 {/* Already have an account */}
-                <p className="sf-pro font-normal text-[15px] text-gray drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
+                <p className="sf-pro font-normal text-[25px] text-gray drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
                     Already have an account?{" "}
                     <Link href="/signin" className="underline hover:text-[#6EC9F5] transition-colors">
                         Sign In
@@ -62,7 +62,7 @@ export default function SignUp() {
         </div>
 
         {/* Right Side - TruthLens Logo */}
-        <div className="w-full flex flex-col p-[60px] items-center gap-[45px]">
+        <div className="w-full flex flex-col p-[125px] items-center gap-[45px]">
             {/* TruthLens Text */}
             <h1 className="sf-pro font-normal text-[96px] text-center">
                 <span className="text-white">Truth</span>
