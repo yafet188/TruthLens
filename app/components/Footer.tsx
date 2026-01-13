@@ -39,11 +39,21 @@ export default function Footer() {
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Quick Links</p>
                             <div className="flex flex-col justify-between gap-[10px]">
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Home</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">How It Works</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Analyze</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Dashboard</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Feedback</p>
+                                <Link href="/analyze" aria-label="Go to Home">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Home</p>
+                                </Link>
+                                <Link href="/about" aria-label="Go to About">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">How It Works</p>
+                                </Link>
+                                <Link href="/features" aria-label="Go to Features">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Analyze</p>
+                                </Link>
+                                <Link href="/dashboard" aria-label="Go to Dashboard">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Dashboard</p>
+                                </Link>
+                                <Link href="/feedback" aria-label="Go to Feedback">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Feedback</p>
+                                </Link>
                             </div>
                         </div>
 
@@ -66,8 +76,12 @@ export default function Footer() {
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Contact</p>
                             <div className="flex flex-col justify-between gap-[10px]">
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Email</p>
-                                <p className="text-[15px] font-bold text-[#0181B1] sf-pro ">Phone</p>
+                                <Link href="mailto:tegbaruyafet18@gmail.com" aria-label="Send Email to Yafet Tegbaru">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Email</p>
+                                </Link>
+                                <Link href="tel:+15195889059" aria-label="Call Phone Number">
+                                    <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Phone</p>
+                                </Link>
                             </div>
                         </div>
 
