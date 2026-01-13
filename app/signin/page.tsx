@@ -45,7 +45,7 @@ export default function SignIn() {
             {/* Sign Up Link */}
             <div className="flex flex-row gap-[10px] justify-center">
                 <p className="sf-pro font-normal text-[25px] text-[#A3A0A0]drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">Don't have an account?</p>
-                <Link href="/signup" className="sf-pro font-normal text-[25px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)] underline">Sign Up</Link>
+                <Link href="/signup" className="sf-pro font-normal text-[25px] text-white hover:text-[#6EC9F5] transition-colors drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)] underline">Sign Up</Link>
             </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function SignIn() {
             </h1>
 
             {/* Logo Section */}
-            <div className="flex flex-row">
+            <Link href="/analyze" className="flex flex-row">
                 <Image
                     src="/images/Logo+Text.png"
                     alt="Logo"
@@ -73,11 +73,11 @@ export default function SignIn() {
                     height={100}
                     className="border-r-[0.5px] border-t-[0.5px] border-b-[0.5px] border-[#00B0F2]"
                 />
-            </div>
+            </Link>
 
             {/* Terms and Conditions */}
             <p className="sf-pro font-normal text-[15px] text-white drop-shadow-[2px_4px_4px_rgba(0,0,0,0.33)]">
-                By continuing, you agree to our <Link href="/terms" className="underline">Terms of Service</Link> and <Link href="/privacy" className="underline">Privacy Policy</Link>.
+                By continuing, you agree to our <Link href="/terms" className="underline hover:text-[#6EC9F5] transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-[#6EC9F5] transition-colors">Privacy Policy</Link>.
             </p>
 
         </div>
