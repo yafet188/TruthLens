@@ -45,7 +45,7 @@ export default function Footer() {
                                 <Link href="/about" aria-label="Go to About">
                                     <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">How It Works</p>
                                 </Link>
-                                <Link href="/features" aria-label="Go to Features">
+                                <Link href="/analyze" aria-label="Go to Features">
                                     <p className="text-[15px] font-bold text-[#0181B1] sf-pro hover:text-[#00B0F2]">Analyze</p>
                                 </Link>
                                 <Link href="/dashboard" aria-label="Go to Dashboard">
