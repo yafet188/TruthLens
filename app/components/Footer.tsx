@@ -93,8 +93,8 @@ export default function Footer() {
                             <Image
                                 src="/images/github.png"
                                 alt="GitHub"
-                                width={24}
-                                height={24}
+                                width={30}
+                                height={30}
                                 className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
                             />
                         </Link>
@@ -102,8 +102,8 @@ export default function Footer() {
                             <Image
                                 src="/images/linkedin.png"
                                 alt="LinkedIn"
-                                width={24}
-                                height={24}
+                                width={30}
+                                height={30}
                                 className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
                             />
                         </Link>
@@ -111,8 +111,8 @@ export default function Footer() {
                             <Image
                                 src="/images/instagram.png"
                                 alt="Instagram"
-                                width={24}
-                                height={24}
+                                width={30}
+                                height={30}
                                 className="cursor-pointer hover:opacity-70 transition-opacity duration-200"
                             />
                         </Link>
@@ -124,16 +124,16 @@ export default function Footer() {
                                 <Image
                                     src="/images/Y.png"
                                     alt="Y Logo"
-                                    width={16}
-                                    height={16}
+                                    width={20}
+                                    height={20}
                                     className="hover:opacity-70 transition-opacity duration-200"
                                 />
 
                                 <Image
                                     src="/images/T.png"
                                     alt="T Logo"
-                                    width={16}
-                                    height={16}
+                                    width={20}
+                                    height={20}
                                     className="hover:opacity-70 transition-opacity duration-200"
                                 />
                             </div>
