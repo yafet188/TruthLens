@@ -1,12 +1,28 @@
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { use, useEffect, useState } from 'react'
 import DropDown from './DropDown';
 
 export default function Header() {
+    const [scrolled, setScrolled] = useState(false)
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         setScrolled(window.scrollY > 10)
+    //     }
+
+    //     window.addEventListener('scroll', handleScroll)
+    //     return () => window.removeEventListener('scroll', handleScroll)
+    // }, [])
+
     return (
-        <header>
+        <header
+            className="sticky top-0 z-50 w-full transition-all duration-300 ease-out"
+        >
             {/* Header Container */}
-            <div className="w-full flex flex-row justify-between items-center px-[40px] py-[50px] gap-auto">
+            <div className="w-full flex flex-row justify-between items-center px-[40px] py-[25px] gap-auto">
                 {/* Logo */}
                 <Link href="/analyze" aria-label="Go to homepage">
                     <Image
