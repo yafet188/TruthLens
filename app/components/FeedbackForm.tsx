@@ -12,16 +12,16 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-[750px]">
       <div>
-        <label htmlFor="feedback" className="block text-sm font-medium text-gray-700">
-          Your Feedback
+        <label htmlFor="feedback" className="sf-pro block text-[25px] font-medium text-white">
+          First Name:
         </label>
         <textarea
           id="feedback"
           name="feedback"
           required
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-[7.5px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           rows={4}
         ></textarea>
       </div>
@@ -33,7 +33,7 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
           type="email"
           id="email"
           name="email"
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
       </div>
       <div>
