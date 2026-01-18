@@ -11,10 +11,15 @@ export default function Page() {
 
       {/* Feedback Container */}
       <div className="container mx-auto w-[1000px] flex flex-col items-center gap-[50px]">
-        <h1 className="text-white text-[64px] font-bold mt-10">Your Feedback is Valuable!</h1>
-        <p className="sf-pro text-gray-300 text-lg mt-4 text-center">
-          Your insights drive our evolution. Share your feedback or report an issue so we can make
-          TruthLens smarter and more accurate for everyone.
+        <h1 className="sf-pro text-white text-[64px] font-semibold mt-10">Your Feedback is Valuable!</h1>
+        <p className="sf-pro text-white text-[40px] text-center">
+          Your insights drive our evolution.
+        </p>
+        <p className="sf-pro text-white text-[30px] text-center max-w-3xl">
+          Share your feedback or report an issue so we can make
+          Truth
+          <span className="text-[#6EC9F5]">Lens </span>
+          smarter and more accurate for everyone.
         </p>
         <FeedbackForm onSubmit={(formData) => {
           // Handle form submission logic here
@@ -22,7 +27,7 @@ export default function Page() {
         }} />
       </div>
 
-       <Footer />
+      <Footer />
     </div>
   );
 }
