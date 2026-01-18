@@ -22,7 +22,7 @@ export default function Header() {
             className="sticky top-0 z-50 w-full transition-all duration-300 ease-out"
         >
             {/* Header Container */}
-            <div className="w-full flex flex-row justify-between items-center px-[40px] py-[25px] gap-auto">
+            <div className="w-full flex flex-row justify-between items-center px-[40px] py-[40px] gap-auto">
                 {/* Logo */}
                 <Link href="/analyze" aria-label="Go to homepage">
                     <Image
