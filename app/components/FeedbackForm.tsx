@@ -12,10 +12,43 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-[750px]">
+    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-[750px] pb-50 mt-10">
+      <div>
+        <label htmlFor="firstname" className="sf-pro block text-[25px] font-medium text-white">
+          First Name (optional):
+        </label>
+        <input
+          type="name"
+          id="firstname"
+          name="firstname"
+          className="mt-1 block w-full p-3 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+      <div>
+        <label htmlFor="lastname" className="sf-pro block text-[25px] font-medium text-white">
+          Last Name (optional):
+        </label>
+        <input
+          type="name"
+          id="lastname"
+          name="lastname"
+          className="mt-1 block w-full p-3 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
+      <div>
+        <label htmlFor="email" className="sf-pro block text-[25px] font-medium text-white">
+          Email:
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className="mt-1 block w-full p-3 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+      </div>
       <div>
         <label htmlFor="feedback" className="sf-pro block text-[25px] font-medium text-white">
-          First Name:
+          Feedback:
         </label>
         <textarea
           id="feedback"
@@ -24,17 +57,6 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
           className="mt-1 block w-full p-2 border border-gray-300 rounded-[7.5px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           rows={4}
         ></textarea>
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Your Email (optional)
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
       </div>
       <div>
         <button
