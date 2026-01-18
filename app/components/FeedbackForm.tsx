@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 interface FeedbackFormProps {
   onSubmit: (formData: FormData) => void;
 }
 
 const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const handleTextareaInput = () => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    textarea.style.height = 'auto';
+    textarea.style.height = `${textarea.scrollHeight}px`;
+  };
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -54,7 +63,9 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ onSubmit }) => {
           id="feedback"
           name="feedback"
           required
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-[7.5px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          ref={textareaRef}
+          onInput={handleTextareaInput}
+          className="mt-1 block w-full p-3 border border-gray-300 rounded-[15px] shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm resize-none overflow-hidden"
           rows={4}
         ></textarea>
       </div>
