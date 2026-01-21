@@ -6,6 +6,13 @@ export default function DropDown() {
     // Controls whether the dropdown is open or closed
     const [open, setOpen] = useState(false);
 
+    {/*
+      Dropdown component structure:
+      - Root container
+      - Trigger button (hamburger/chevron)
+      - Menu panel (links)
+    */}
+
     return (
         /* 
           Root dropdown container
