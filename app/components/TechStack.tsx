@@ -20,6 +20,9 @@ interface TechStackProps {
   categories?: TechCategory[];
 }
 
+{// Default tech stack categories and items
+}
+
 const defaultCategories: TechCategory[] = [
   {
     title: 'Frontend',
