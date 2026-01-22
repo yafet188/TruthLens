@@ -1,15 +1,20 @@
+// This component renders the global site footer, including navigation links, social media icons, and copyright information.
+
 import Image from "next/image";
 import Link from "next/link";
 
+// Reusable footer component for the site
 export default function Footer() {
     return (
+        // Wraps the entire footer
         <footer>
+            {/* Container controlling layout, spacing, and background */}
             <div className="w-full flex flex-col items-top gap-[20px] px-[60px] py-[20px] bg-[#000000]">
 
-                {/* Top Section */}
+                {/* Top Section container */}
                 <div className="w-full flex flex-row justify-between items-start">
 
-                    {/* Logo Section */}
+                    {/* Logo Section (logo + tagline link) */}
                     <div>
                         <Link
                             href="/analyze"
@@ -33,9 +38,9 @@ export default function Footer() {
                         </Link>
                     </div>
 
-                    {/* Links Section */}
+                    {/* Links Section wrapper */}
                     <div className="flex flex-row gap-[50px]">
-                        {/* Quick Links */}
+                        {/* Quick Links column */}
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Quick Links</p>
                             <div className="flex flex-col justify-between gap-[10px]">
@@ -57,7 +62,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        {/* Policies */}
+                        {/* Policies column */}
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Policies</p>
                             <div className="flex flex-col justify-between gap-[10px]">
@@ -72,7 +77,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        {/* Contact */}
+                        {/* Contact column */}
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
                             <p className="text-[15px] underline font-bold text-[#00B0F2] sf-pro ">Contact</p>
                             <div className="flex flex-col justify-between gap-[10px]">
@@ -87,7 +92,7 @@ export default function Footer() {
 
                     </div>
 
-                    {/* Social Media Icons */}
+                    {/* Social Media Icons section */}
                     <div className="flex flex-row items-center pt-[8px] pb-[5px] gap-[20px]">
                         <Link href="https://github.com/yafet188" aria-label="GitHub Link">
                             <Image
@@ -147,14 +152,14 @@ export default function Footer() {
                     {/* Divider */}
                     <div className="w-full border-[1px] border-[#003446]" />
 
-                    {/* Info */}
+                    {/* Info row */}
                     <div className="w-full flex flex-row justify-between items-center pt-[3px] pb-[3px]">
-                        {/* Name */}
+                        {/* Designer credit */}
                         <div className="flex flex-row gap-[10px]">
                             <p className="text-[16px] font-normal text-[#004159] sf-pro ">Designed and Developed by Yafet Tegbaru</p>
                         </div>
 
-                        {/* Copyright */}
+                        {/* Copyright notice */}
                         <div className="flex flex-row gap-[10px]">
                             <p className="text-[16px] font-normal text-[#004159] sf-pro ">© 2025 TruthLens. All rights reserved.</p>
                         </div>
