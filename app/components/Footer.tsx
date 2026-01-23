@@ -16,11 +16,13 @@ export default function Footer() {
 
                     {/* Logo Section (logo + tagline link) */}
                     <div>
+                        {/* Brand anchor linking back to Analyze */}
                         <Link
                             href="/analyze"
                             aria-label="Go to Analyze"
                             className="flex flex-row items-center"
                         >
+                            {/* Split logo lockup: main logo and tagline images */}
                             <Image
                                 src="/images/Logo+Text.png"
                                 alt="TruthLens logo"
@@ -39,6 +41,7 @@ export default function Footer() {
                     </div>
 
                     {/* Links Section wrapper */}
+                    {/* Contains three navigation columns: Quick Links, Policies, Contact */}
                     <div className="flex flex-row gap-[50px]">
                         {/* Quick Links column */}
                         <div className="flex flex-col pt-[8px] pb-[8px] gap-[15px]">
@@ -93,6 +96,7 @@ export default function Footer() {
                     </div>
 
                     {/* Social Media Icons section */}
+                    {/* External profile links to social platforms */}
                     <div className="flex flex-row items-center pt-[8px] pb-[5px] gap-[20px]">
                         <Link href="https://github.com/yafet188" aria-label="GitHub Link">
                             <Image
@@ -124,6 +128,7 @@ export default function Footer() {
 
 
                         <Link href="https://yafetegbaru.com" aria-label="Portfolio Link">
+                            {/* Portfolio link combining Y and T logos */}
                             <div className="flex flex-row pt-[5px] pb-[5px] gap-[5px]">
 
                                 <Image
@@ -148,6 +153,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Section */}
+                {/* Container holding legal and meta information */}
                 <div className="w-full flex flex-col justify-between">
                     {/* Divider */}
                     <div className="w-full border-[1px] border-[#003446]" />
