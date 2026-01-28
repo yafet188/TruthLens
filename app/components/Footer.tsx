@@ -1,5 +1,3 @@
-// This component renders the global site footer, including navigation links, social media icons, and copyright information.
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         // Wraps the entire footer
-        <footer>
+        <footer>s
             {/* Container controlling layout, spacing, and background */}
             <div className="w-full flex flex-col items-top gap-[20px] px-[60px] py-[20px] bg-[#000000]">
 
