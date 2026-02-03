@@ -1,13 +1,16 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import EnterMedia from "../components/EnterMedia";
 
 export default function page() {
+  const handleEnter = () => {
+    // Add your logic here
+  };
+
   return (
-    // Sets the background color and minimum height of the page
     <div className="bg-[#000F14] min-h-screen">
-      {/* Renders the global header */}
       <Header />
-      {/* Renders the global footer */}
+      <EnterMedia onEnter={handleEnter}/>
       <Footer />
     </div>
   );
