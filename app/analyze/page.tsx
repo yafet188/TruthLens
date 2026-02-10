@@ -1,8 +1,9 @@
+'use client';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import EnterMedia from "../components/EnterMedia";
 
-export default function page() {
+export default function Page() {
   const handleEnter = () => {
     // Add your logic here
   };
@@ -10,7 +11,7 @@ export default function page() {
   return (
     <div className="bg-[#000F14] min-h-screen">
       <Header />
-      <EnterMedia onEnter={handleEnter}/>
+      <EnterMedia onEnter={handleEnter} />
       <Footer />
     </div>
   );
