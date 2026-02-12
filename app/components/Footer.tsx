@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         // Wraps the entire footer
-        <footer>s
+        <footer>
             {/* Container controlling layout, spacing, and background */}
             <div className="w-full flex flex-col items-top gap-[20px] px-[60px] py-[20px] bg-[#000000]">
 
